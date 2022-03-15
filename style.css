@@ -1,0 +1,57 @@
+
+*{
+    font-family: cursive; 
+    color: #E900FF;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.mainContainer{
+    width: 1000px;
+    height: 100%;
+    margin: 0;
+    text-shadow: 3px 3px 10px;
+    color: #E900FF;
+}
+
+.displayWord{
+    width: 100%;
+    top: 400px;
+    font-size: 4em;
+    text-align: center;
+    position: relative;
+}
+
+.displayType, .displayType:focus{
+    padding: 0;
+    top: 630px;
+    width: 1000px;
+    height: 200px;
+    font-size: 3em;
+    text-shadow: 3px 3px 10px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-align: center;
+    position: relative;
+}
+
+.missCount{
+    font-size: 0.5em;
+    text-shadow: 3px 3px 10px;
+    border-radius: 5px;
+    font-size: 2em;
+    position: relative;
+}
+
