@@ -18,8 +18,9 @@ body{
     width: 1000px;
     height: 100%;
     margin: 0;
-    text-shadow: 3px 3px 10px;
     color: #E900FF;
+    display: flex;
+    flex-direction: column;
 }
 
 .displayWord{
@@ -32,26 +33,49 @@ body{
 
 .displayType, .displayType:focus{
     padding: 0;
-    top: 630px;
-    width: 1000px;
+    top: 550px;
+    left: 50%;
+    width: 900px;
     height: 200px;
     font-size: 3em;
-    text-shadow: 3px 3px 10px;
+    transform: translateX(-50%);
+    border: none;
     border-radius: 5px;
     color: #fff;
     background-color: #000;
     text-decoration: none;
-    border: none;
     outline: none;
     text-align: center;
     position: relative;
 }
 
 .missCount{
+    left: 10px;
+    top: 10px;
     font-size: 0.5em;
-    text-shadow: 3px 3px 10px;
     border-radius: 5px;
     font-size: 2em;
+    position: absolute;
+}
+
+.countdown{
+    top: 10px;
+    right: 10px;
+    font-size: 2em;
+    position: absolute;
+}
+
+.retryBtn{
+    top: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 100px;
+    text-align: center;
     position: relative;
+    visibility: hidden;
+}
+.retryBtn[show = visible]{
+    visibility: visible;
 }
 
