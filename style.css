@@ -2,6 +2,7 @@
 *{
     color: #E900FF;
     font-family: cursive; 
+    box-sizing: border-box;
 }
 
 
@@ -25,11 +26,15 @@ body{
 }
 
 .displayWord{
-    top: 400px;
+    top:400px;
     font-size: 4em;
     width: 100%;
     text-align: center;
     position: relative;
+    visibility: visible;
+}
+
+.displayType{
     visibility: hidden;
 }
 
@@ -78,6 +83,36 @@ body{
     position: relative;
     visibility: hidden;
 }
+
+.diffMenu{
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.menuTitle{ 
+    padding: 0;
+    font-size: 2.4em;
+    visibility: hidden;
+
+}
+
+.diffOption{
+    width: min-content;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.8em;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    visibility: hidden;
+    position: relative;
+}
+
 
 *[show = visible]{
     visibility: visible;
